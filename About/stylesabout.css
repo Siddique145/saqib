@@ -7,7 +7,7 @@ body {
 }
 
 .container {
-    max-width:100%;
+    max-width: 100%;
     margin: 0 auto;
     padding: 0 20px;
 }
@@ -21,7 +21,6 @@ header {
 header h1 {
     margin: 0;
 }
-
 
 nav ul {
     list-style: none;
@@ -76,6 +75,7 @@ footer {
     padding: 20px 0;
 }
 
+
 @keyframes slideIn {
     0% {
         transform: translateX(-100%);
@@ -95,12 +95,20 @@ footer {
     animation-delay: 5s;
     display: flex;
 }
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
 
 .rotate {
     width: 100px;
     height: 100px;
     background-color: #e9eef0;
-    animation: rotate 2s linear infinite;
+    animation: rotate 2s linear ;
     border-radius: 50%;
     
 }
@@ -113,7 +121,6 @@ img{
     width: 100px;
 }
 
-
 @media screen and (max-width: 768px) {
     /* CSS rules for smaller screens */
 }
@@ -124,16 +131,29 @@ img{
     margin: 0 auto; /* Center the container horizontally */
     padding: 20px;
 }
-   
-.service {
-    margin-bottom: 30px;
+.social-links {
+    text-align: center;
+    margin-top: 20px;
 }
 
-.service h2 {
-    color: #007bff;
+.social-links a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333;
 }
 
-.service p {
-    text-align: justify;
-    line-height: 1.6;
+/* CSS styles for specific social media icons */
+.social-links a:hover {
+    color: #007bff; /* Change color on hover */
+}
+
+/* Example of customizing the Facebook icon */
+.facebook-icon:before {
+    content: "\f09a"; /* Unicode character for the Facebook icon */
+    font-family: FontAwesome; /* Use a font library like FontAwesome */
+}
+.instagram-icon:before {
+    content: "\f09a"; /* Unicode character for the Facebook icon */
+    font-family: FontAwesome; /* Use a font library like FontAwesome */
 }
